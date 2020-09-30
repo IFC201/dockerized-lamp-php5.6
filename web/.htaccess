@@ -1,0 +1,2 @@
+# Regla de acceso prohibido a los directorios desde el navegador
+Options All -Indexes

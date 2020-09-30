@@ -1,0 +1,77 @@
+.contenedor-formularios {
+  background: rgba(19, 35, 47, 0.9);
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.contenedor-tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 0;
+}
+.contenedor-tabs:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.contenedor-tabs li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s ease;
+}
+.contenedor-tabs li a:hover {
+  background: #179b77;
+  color: #fff;
+}
+.contenedor-tabs .active a {
+  background: #1ab188;
+  color: #fff;
+}
+
+.contenido-tab > div:last-child {
+  display: none;
+}
+
+.contenedor-input {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.fila-arriba:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.fila-arriba div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.fila-arriba div:last-child {
+  margin: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .fila-arriba div {
+    width: 100%;
+  }
+  .fila-arriba div:last-child {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .contenedor-tabs li a {
+    width: 100%;
+  }
+}
